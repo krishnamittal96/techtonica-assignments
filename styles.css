@@ -71,7 +71,7 @@ a:visited {
 }
 
 .render {
-    margin-top: 150px;
+    margin-top: 0%;
 }
 
 .arrow {
@@ -136,7 +136,11 @@ button:hover {
     }
 
     .big-space {
-        height: 0px;
+        display:none;
+    }
+
+    .render {
+        display:none;
     }
 }
 
