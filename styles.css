@@ -1,19 +1,30 @@
 body {
-    font-family: 'Comfortaa';
-    color: #221802;
-    background-color: #baa472;
+    font-family: 'Space Mono', monospace;
+    color: whitesmoke;
+    background-color: #1f1f1f;
     text-align: center;
 }
 
 header {
-    padding: 20px;
+    padding: 0px;
 }
 
 h1,
 h3 {
-    font-family: 'Rubik Mono One';
+    font-family: 'Kosugi Maru', sans-serif;
     color: #ddcfb0;
-    text-shadow: 2px 2px 5px black;
+    text-shadow: 2px 2px 5px rgb(139, 139, 139);
+}
+
+h1 {
+    font-size: 100px;
+    color: whitesmoke;
+    text-align: right;
+}
+
+
+div {
+    padding: 1px;
 }
 
 ul {
@@ -36,10 +47,37 @@ a:visited {
     color: #221802; 
 }
 
+
 #main-img {
     border-radius: 50px;
 }
 
+.navigation {
+    width: 20%;
+    float:left;
+    text-align: center;
+    margin-top: -50px;
+    padding: 10px;
+}
+
+.navigation a {
+    padding: 20px;
+    color: whitesmoke;
+}
+
+.big-space {
+    height: 700px;
+    text-align: left;
+}
+
+.render {
+    margin-top: 150px;
+}
+
+.arrow {
+    font-size: 100px;
+    text-align: center;
+}
 
 .description {
     border-style: dotted;
@@ -48,21 +86,28 @@ a:visited {
     border-color:#ddcfb0;
 }
 
+.second-part {
+    background-color:whitesmoke;
+}
+
 .left {
-    width: 600px;
-    position: fixed;
+    width: 40%;
+    float: left;
     right: 51%;
 }
 
 .right {
-    width: 600px;
-    position: fixed;
+    width: 40%;
+    float: right;
     left: 51%;
-    background: url(https://ibb.co/cN6Lr74);
+}
+
+.finished {
+    text-decoration: line-through;
 }
 
 button {
-    font-family: 'Comfortaa';
+    font-family: 'Space Mono', monospace;
     padding: 5px;
     border-radius: 5px;
     border-color:#ddcfb0;
@@ -71,6 +116,29 @@ button {
 }
 
 button:hover {
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 12px 16px 0 rgba(204, 203, 203, 0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
     color: white;
 }
+
+
+@media screen and (max-width: 1274px) {
+    .left {
+        width: 100%;
+    }
+    
+    .right {
+        width: 100%;
+    }
+
+    #main-img {
+        width: 50%;
+        border-radius: 50px;
+    }
+
+    .big-space {
+        height: 0px;
+    }
+}
+
+
+
